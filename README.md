@@ -52,3 +52,5 @@ While you are free to organize your project however you'd like to meet the requi
 ## Submission
 
 **Make a pull request** from your fork into the main branch of this starter repo. The title of your pull request should include your full name. Submit the link to your _pull request_.
+
+I also debugged my code as I went and did a big spell check and over bug fix after i had everything done, just wanted to commit that i went over everything to get the site working how I wanted it to.
