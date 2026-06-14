@@ -1,0 +1,64 @@
+/* ── NavBar ──────────────────────────────────────────── */
+header {
+  background-color: var(--color-surface);
+  border-bottom: 0.0625rem solid var(--color-border);
+  padding: 0 2rem;
+  height: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: var(--shadow-sm);
+}
+
+header p {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--color-text);
+  letter-spacing: 0.02em;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header nav a {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  text-decoration: none;
+  padding: 0.25rem 0;
+  border-bottom: 0.125rem solid transparent;
+  outline: none;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+header nav a:hover {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+header nav a.active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+  outline: none;
+}
+
+header nav a:focus-visible {
+  outline: 0.125rem solid var(--color-accent);
+  outline-offset: 0.25rem;
+  border-radius: 0.125rem;
+}
+
+header nav a[onClick] {
+  cursor: pointer;
+  color: var(--color-danger);
+}
+
+header nav a[onClick]:hover {
+  color: var(--color-danger-hover);
+}
